@@ -6,7 +6,7 @@ export const filters = {
   }
 
 const taskSlice = createSlice({
-    name:"todos",
+    name:"tasks",
     initialState:{
         todos:[
         {
@@ -30,7 +30,7 @@ const taskSlice = createSlice({
             isDone:false
           }
     ],
-    filterBy:filters.ALL
+    filter:filters.ALL
 },
     
     reducers:{
@@ -54,7 +54,7 @@ const taskSlice = createSlice({
 
 
           filterBy(state, action) {
-            state.filterBy = action.payload
+            state.filter = action.payload
           },
     }
 })

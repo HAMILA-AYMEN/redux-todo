@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import {useDispatch} from 'react-redux'
 import {addtask} from '../redux/taskSlice'
+import { SiAddthis } from 'react-icons/si';
 
 
 
@@ -23,14 +23,16 @@ function Addtask() {
   
   return (
     <div>
-   <Button variant="primary"onClick={handleSubmit}>Addtask</Button>
+   
    
   
-
+   <SiAddthis variant="primary"onClick={handleSubmit}/>
       
     <Form.Control as="textarea"  
+    
           value={value}
            onChange={e => setValue(e.target.value)}
+           placeholder="Add New Task"
     
     />
     </div>

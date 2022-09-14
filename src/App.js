@@ -10,7 +10,7 @@ function App() {
   
   return (
     <div className="App">
-     <h2>ToDo Application </h2>
+     <h2 style={{textAlign:"center"}}>ToDo Application </h2>
      
       <ListTask/>
   
